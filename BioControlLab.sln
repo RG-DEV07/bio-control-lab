@@ -2,7 +2,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 18
 VisualStudioVersion = 18.8.11904.113 insiders
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InterfazPrincipal", "BioControlLab\InterfazPrincipal.csproj", "{9A8E9270-948F-4C81-9B0C-BC9F6D0A9D35}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InterfazPrincipal", "app\InterfazPrincipal.csproj", "{9A8E9270-948F-4C81-9B0C-BC9F6D0A9D35}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
