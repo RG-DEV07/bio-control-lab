@@ -1,19 +1,39 @@
 # BioControlLab
 
-Sistema de escritorio (Windows Forms, C#) para gestionar un laboratorio clínico: pacientes, médicos, citas, instrumentos, exámenes y reportes, con base de datos SQL Server.
+Sistema de escritorio en C# (Windows Forms) para gestionar un laboratorio clínico: pacientes, médicos, citas, exámenes, inventario, proveedores y reportes en PDF. Usa SQL Server como base de datos.
+
+## Capturas
+
+**Módulo de citas**
+![Citas](docs/capturas/citas.png)
+
+**Módulo de proveedores**
+![Proveedores](docs/capturas/proveedores.png)
+
+**Ventana principal**
+![Ventana principal](docs/capturas/menu-principal.png)
+
+## Funciones
+- Gestión de pacientes, médicos y clientes
+- Registro y seguimiento de citas con estado (programada, completada)
+- Catálogo de exámenes e instrumentos
+- Control de inventario de insumos y proveedores
+- Exportación de reportes a PDF
 
 ## Estructura
 ```
-app/                      Proyecto principal (WinForms)
-BioControlLab.sln         Solución de Visual Studio
-base-de-datos/scripts/    Scripts SQL para crear la base y sus relaciones
-docs/diagramas/           Modelo relacional
+app/                  Proyecto principal (WinForms)
+BioControlLab.sln     Solución de Visual Studio
+base-de-datos/        Scripts SQL para crear la base y sus relaciones
+docs/                 Diagrama relacional y capturas
 ```
 
 ## Requisitos
 - Visual Studio con .NET Framework
-- SQL Server (ejecutar los scripts de `base-de-datos/scripts/` en orden)
+- SQL Server
 - Restaurar los paquetes NuGet al abrir la solución
 
-## Configuración
-La cadena de conexión está en `app/App.config`. Ajústala a tu servidor local antes de ejecutar.
+## Instalación
+1. Ejecuta los scripts de `base-de-datos/scripts/` en SQL Server, en orden.
+2. Ajusta la cadena de conexión en `app/App.config` a tu servidor.
+3. Abre `BioControlLab.sln` y ejecuta el proyecto.
