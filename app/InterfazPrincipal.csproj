@@ -1,0 +1,213 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{9A8E9270-948F-4C81-9B0C-BC9F6D0A9D35}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>BioControlLab</RootNamespace>
+    <AssemblyName>BioControlLab</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="BouncyCastle.Cryptography, Version=2.0.0.0, Culture=neutral, PublicKeyToken=072edcf4a5328938, processorArchitecture=MSIL">
+      <HintPath>..\packages\BouncyCastle.Cryptography.2.6.2\lib\net461\BouncyCastle.Cryptography.dll</HintPath>
+    </Reference>
+    <Reference Include="FontAwesome.Sharp, Version=6.6.0.0, Culture=neutral, PublicKeyToken=d16d1e4e568ec10f, processorArchitecture=MSIL">
+      <HintPath>..\packages\FontAwesome.Sharp.6.6.0\lib\net472\FontAwesome.Sharp.dll</HintPath>
+    </Reference>
+    <Reference Include="itextsharp, Version=5.5.13.5, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <HintPath>..\packages\iTextSharp.5.5.13.5\lib\net461\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="MaterialSkin, Version=2.3.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\MaterialSkin.2.2.3.1\lib\net461\MaterialSkin.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Windows.Forms.DataVisualization.Design" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Conexion.cs" />
+    <Compile Include="Data\RepoCitas.cs" />
+    <Compile Include="Data\RepoClientes.cs" />
+    <Compile Include="Data\RepoEmpleados.cs" />
+    <Compile Include="Data\RepoExamenes.cs" />
+    <Compile Include="Data\RepoInstrumento.cs" />
+    <Compile Include="Data\RepoInsumos.cs" />
+    <Compile Include="Data\RepoProveedor.cs" />
+    <Compile Include="Data\RepoReportes.cs" />
+    <Compile Include="Data\RepositorioBase.cs" />
+    <Compile Include="frmR\frmInsumos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmR\frmInsumos.Designer.cs">
+      <DependentUpon>frmInsumos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmR\frmr\frmCitas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmR\frmr\frmCitas.Designer.cs">
+      <DependentUpon>frmCitas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmR\frmr\frmClientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmR\frmr\frmClientes.Designer.cs">
+      <DependentUpon>frmClientes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmR\frmr\frmExamenes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmR\frmr\frmExamenes.Designer.cs">
+      <DependentUpon>frmExamenes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmR\frmr\frmInstrumentos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmR\frmr\frmInstrumentos.Designer.cs">
+      <DependentUpon>frmInstrumentos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmR\frmr\frmMedicos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmR\frmr\frmMedicos.Designer.cs">
+      <DependentUpon>frmMedicos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmR\frmr\frmPrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmR\frmr\frmPrincipal.Designer.cs">
+      <DependentUpon>frmPrincipal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmR\frmr\frmProveedores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmR\frmr\frmProveedores.Designer.cs">
+      <DependentUpon>frmProveedores.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmR\frmr\frmReportes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmR\frmr\frmReportes.Designer.cs">
+      <DependentUpon>frmReportes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Cita.cs" />
+    <Compile Include="Models\Cliente.cs" />
+    <Compile Include="Models\Consulta.cs" />
+    <Compile Include="Models\EntidadBase.cs" />
+    <Compile Include="Models\Examen.cs" />
+    <Compile Include="Models\Insumo.cs" />
+    <Compile Include="Models\Medicos.cs" />
+    <Compile Include="Models\Paciente.cs" />
+    <Compile Include="Models\Proveedor.cs" />
+    <Compile Include="Usuario.cs" />
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Utils\Exportador.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="frmR\frmInsumos.resx">
+      <DependentUpon>frmInsumos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmR\frmr\frmCitas.resx">
+      <DependentUpon>frmCitas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmR\frmr\frmClientes.resx">
+      <DependentUpon>frmClientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmR\frmr\frmExamenes.resx">
+      <DependentUpon>frmExamenes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmR\frmr\frmInstrumentos.resx">
+      <DependentUpon>frmInstrumentos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmR\frmr\frmMedicos.resx">
+      <DependentUpon>frmMedicos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmR\frmr\frmPrincipal.resx">
+      <DependentUpon>frmPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmR\frmr\frmProveedores.resx">
+      <DependentUpon>frmProveedores.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmR\frmr\frmReportes.resx">
+      <DependentUpon>frmReportes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <Content Include="fonts\fontawesome-webfont.eot" />
+    <Content Include="fonts\fontawesome-webfont.ttf" />
+    <Content Include="fonts\fontawesome-webfont.woff" />
+    <Content Include="fonts\fontawesome-webfont.woff2" />
+    <Content Include="fonts\FontAwesome.otf" />
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\font-awesome.css" />
+    <Content Include="Content\font-awesome.min.css" />
+    <Content Include="fonts\fontawesome-webfont.svg" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

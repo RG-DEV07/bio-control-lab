@@ -1,0 +1,24 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 18
+VisualStudioVersion = 18.8.11904.113 insiders
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InterfazPrincipal", "BioControlLab\InterfazPrincipal.csproj", "{9A8E9270-948F-4C81-9B0C-BC9F6D0A9D35}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9A8E9270-948F-4C81-9B0C-BC9F6D0A9D35}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9A8E9270-948F-4C81-9B0C-BC9F6D0A9D35}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9A8E9270-948F-4C81-9B0C-BC9F6D0A9D35}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9A8E9270-948F-4C81-9B0C-BC9F6D0A9D35}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F8989CFF-EEB6-410A-BF01-7C8895D03788}
+	EndGlobalSection
+EndGlobal
